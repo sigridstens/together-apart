@@ -1,0 +1,94 @@
+/****************
+  Global Styles
+*****************/
+.App {
+    margin: 0;
+    padding: 0;
+    font-family: "Proxima Soft", sans-serif;
+
+}
+
+canvas {
+    display: block;
+}
+
+:root {
+    --yellow: #F3B444;
+    --red: #CB0202;
+}
+
+/****************
+  Header Styles
+*****************/
+
+header {
+  padding: 4em 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.App-logo {
+    height: 15vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/****************
+  Nav Styles
+*****************/
+header .main-nav ul  {
+    list-style-type: none;
+    letter-spacing: .025em;
+    font-size: 1.25em;
+}
+
+
+header .main-nav .nav-item {
+    display: inline;
+    padding: 1em;
+}
+
+header .main-nav .nav-item a {
+    text-decoration: none;
+    color: var(--red);
+}
+
+header .main-nav .nav-item a:hover {
+    border-bottom: 2px solid var(--red);
+}
+
+
+header .main-nav .nav-item a:focus {
+    border-bottom: 2px solid var(--red);
+}
+
+
+/****************
+  Footer Styles
+*****************/
+
+footer {
+    text-align: center;
+    padding: 5em 0 1em 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
