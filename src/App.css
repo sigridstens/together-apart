@@ -8,14 +8,20 @@
 
 }
 
-canvas {
-    display: block;
-}
-
 :root {
     --yellow: #F3B444;
     --red: #CB0202;
 }
+
+img {
+    width:100%;
+}
+
+canvas {
+    display: block;
+}
+
+
 
 /****************
   Header Styles
@@ -78,6 +84,29 @@ header .main-nav .nav-item a:hover {
 
 header .main-nav .nav-item a:focus {
     border-bottom: 2px solid var(--red);
+}
+
+
+/****************
+  Main Styles
+*****************/
+
+
+main {
+    padding: 5em;
+    position: relative;
+}
+
+/****************
+  Home Styles
+*****************/
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+
 }
 
 
