@@ -4,6 +4,7 @@ import Footer from './components/footer.js';
 import Home from './components/home.js';
 import Contribute from './components/contribute.js';
 import About from './components/about.js';
+import Header from './components/header.js';
 import {
     BrowserRouter as Router,
     Switch,
@@ -17,25 +18,7 @@ function App() {
     <div className="App">
         <Router>
 
-            <header className="App-header">
-
-                <Link to="/">
-                    <img src={logo} className="App-logo" alt="logo" />
-                </Link>
-
-                <nav className="main-nav">
-                    <ul>
-                        <li className="nav-item">
-                            <Link to="/contribute">Contribute</Link>
-                        </li>
-
-                        <li className="nav-item">
-                            <Link to="/about">About</Link>
-                        </li>
-                    </ul>
-                </nav>
-
-            </header>
+        <Header />
 
 \           <Switch>
                 <Route exact path="/">

@@ -21,7 +21,17 @@ canvas {
     display: block;
 }
 
+.button {
+    background: var(--yellow);
+    color: white;
+    padding: .75em 1.25em;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .025em;
 
+}
 
 /****************
   Header Styles
@@ -82,7 +92,7 @@ header .main-nav .nav-item a:hover {
 }
 
 
-header .main-nav .nav-item a:focus {
+.nav-focus a {
     border-bottom: 2px solid var(--red);
 }
 
@@ -93,7 +103,7 @@ header .main-nav .nav-item a:focus {
 
 
 main {
-    padding: 5em;
+    padding: 2em 3em;
     position: relative;
 }
 
@@ -111,6 +121,18 @@ main {
 
 
 /****************
+  About Styles
+*****************/
+.about {
+    font-size: 3em;
+    line-height: 1.25em;
+    color: var(--red);
+}
+
+
+
+
+/****************
   Footer Styles
 *****************/
 
@@ -118,6 +140,4 @@ footer {
     text-align: center;
     padding: 5em 0 1em 0;
     width: 100%;
-    position: fixed;
-    bottom: 0;
 }
